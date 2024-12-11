@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    height: 100vh;
+    
+}
+
+
+.circle {
+    height: 800px;
+    width: 800px;
+    background-color: aquamarine;
+    
+}
+
+.circle img {
+    border-radius: 50%;
+    transition: height 4s ease, width 4s ease-in-out;
+    object-fit: cover;
+    animation: board 3s infinite;
+    position: relative;
+    transition: transform 3s ease;
+   
+}
+
+.circle img:hover {
+    transform: scale(1.2);
+
+    /* transform: rotate(60deg); */
+}
+
+@keyframes board{
+
+    50%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes board{
+    0%{
+        left: 0px; top: 0px;}
+    25%{
+        left: 600px; top: 0px;}
+    50%{
+        left: 600px; top: 600px;}
+    75%{
+        left: 0px; top:600px ;}
+    100%{
+        left:0px; top: 0px;
+    }
+
+    }
+}
